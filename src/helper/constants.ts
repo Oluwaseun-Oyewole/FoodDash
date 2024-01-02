@@ -19,7 +19,7 @@ export const PageTitle: PageTitle = {
   review: "Review",
   setting: "Setting",
   payment: "Payment",
-  account: "account",
+  accounts: "Account",
   help: "help",
 };
 

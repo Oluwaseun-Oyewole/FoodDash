@@ -1,5 +1,7 @@
+import Typography from "../../../../common/components/typography";
+
 const Payment = () => {
-  return <div>Payment</div>;
+  return <Typography children="Payment" type="p" className="text-center" />;
 };
 
 export default Payment;

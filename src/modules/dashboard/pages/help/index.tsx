@@ -1,5 +1,7 @@
+import Typography from "../../../../common/components/typography";
+
 const Help = () => {
-  return <div>Help</div>;
+  return <Typography children="Help" type="p" className="text-center" />;
 };
 
 export default Help;

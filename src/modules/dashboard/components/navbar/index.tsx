@@ -107,8 +107,10 @@ const Navbar = () => {
               initial="hidden"
               exit="exit"
             >
-              <div className="max-w-[85%] md:max-w-[95%] mx-auto">
-                <div className=""> Search</div>
+              <div className="max-w-[90%] md:max-w-[95%] mx-auto">
+                <div className="my-7">
+                  <Search onSearch={onSearch} />
+                </div>
                 <div className="flex items-center gap-5 ">
                   <div className="bg-orange-200 rounded-full flex items-center justify-center w-8 h-8">
                     <img src={Burger} alt="burger" />

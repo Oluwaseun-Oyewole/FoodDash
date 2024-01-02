@@ -13,7 +13,6 @@ const Dashboard = () => {
       transition: {
         type: "spring",
         duration: 1,
-        delay: 0.2,
         stiffness: 200,
       },
     },
@@ -27,7 +26,6 @@ const Dashboard = () => {
       transition: {
         type: "spring",
         duration: 1,
-        delay: 0.2,
         stiffness: 200,
       },
     },
@@ -40,7 +38,6 @@ const Dashboard = () => {
       x: 0,
       transition: {
         duration: 1,
-        delay: 0.2,
         stiffness: 200,
       },
     },
@@ -53,7 +50,6 @@ const Dashboard = () => {
       x: 0,
       transition: {
         duration: 1,
-        delay: 0.2,
         stiffness: 200,
       },
     },
@@ -115,7 +111,7 @@ const Dashboard = () => {
           variants={variant1}
           animate="visible"
           initial="hidden"
-          className="border-b-2 border-gray-100 border-r-2"
+          className="border-b-2 border-gray-100 lg:border-r-2"
         >
           <div>
             <div className="pr-8 pb-8 pt-8">
@@ -241,10 +237,10 @@ const Dashboard = () => {
           variants={variant3}
           animate="visible"
           initial="hidden"
-          className="border-b-2 border-gray-100 border-r-2 mb-5"
+          className="border-b-2 border-gray-100 lg:border-r-2 mb-5"
         >
           <div className="pr-8 pb-8 flex flex-col lg:flex-row relative">
-            <div className="pt-8 w-full lg:w-1/2 relative min-h-[300px] border-r-2 border-gray-100">
+            <div className="pt-8 w-full lg:w-1/2 relative min-h-[300px] lg:border-r-2 border-gray-100">
               <Typography type="p" children="Your Rating" />
               <Typography
                 type="p"
