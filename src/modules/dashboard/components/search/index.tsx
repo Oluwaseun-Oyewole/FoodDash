@@ -23,14 +23,13 @@ const Search: React.FC<ISearchProps> = (props) => {
   }, [params]);
 
   const handleSubmit = (data: Record<string, string>) => {
-    console.log("Data", data);
     const value = data.search;
-    // setSearchInput(value);
-    // setParams((prev) => {
-    //   const oldPrev = new URLSearchParams(prev);
-    //   oldPrev.set("q", value);
-    //   return oldPrev;
-    // });
+    setSearchInput(value);
+    setParams((prev) => {
+      const oldPrev = new URLSearchParams(prev);
+      oldPrev.set("q", value);
+      return oldPrev;
+    });
     if (onSearch) {
       onSearch(value);
     }
