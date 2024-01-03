@@ -1,12 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { IoNotifications } from "react-icons/io5";
+import { IoLogOutOutline, IoNotifications } from "react-icons/io5";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Burger from "../../../../assets/svg/Emoticon.svg";
 import Logo from "../../../../assets/svg/Logo.svg";
 import Typography from "../../../../common/components/typography";
+import { handleLogout } from "../../../../helper";
 import Search from "../search";
 
 const Navbar = () => {
@@ -94,6 +95,12 @@ const Navbar = () => {
               <div>
                 <IoNotifications />
               </div>
+              <div>
+                <IoLogOutOutline
+                  className="cursor-pointer"
+                  onClick={handleLogout}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -122,6 +129,9 @@ const Navbar = () => {
 
                   <div>
                     <IoNotifications />
+                  </div>
+                  <div>
+                    <IoLogOutOutline onClick={handleLogout} />
                   </div>
                 </div>
               </div>

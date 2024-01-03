@@ -30,7 +30,6 @@ export const isUnAuthenticated = () => {
 export const handleLogout = () => {
   localStorage.removeItem(keyConstants.EXPIRY_TOKEN_TIME);
   localStorage.removeItem(keyConstants.AUTH_TOKEN);
-  //   persistor.purge();
   window.location.href = window.location.origin + "/auth";
 };
 

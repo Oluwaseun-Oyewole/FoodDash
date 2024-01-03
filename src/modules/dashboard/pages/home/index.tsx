@@ -13,7 +13,7 @@ const Dashboard = () => {
       transition: {
         type: "spring",
         duration: 1,
-        stiffness: 200,
+        stiffness: 100,
       },
     },
   };
@@ -26,7 +26,7 @@ const Dashboard = () => {
       transition: {
         type: "spring",
         duration: 1,
-        stiffness: 200,
+        stiffness: 100,
       },
     },
   };
@@ -38,7 +38,7 @@ const Dashboard = () => {
       x: 0,
       transition: {
         duration: 1,
-        stiffness: 200,
+        stiffness: 100,
       },
     },
   };
@@ -50,7 +50,7 @@ const Dashboard = () => {
       x: 0,
       transition: {
         duration: 1,
-        stiffness: 200,
+        stiffness: 100,
       },
     },
   };
@@ -314,7 +314,7 @@ const Dashboard = () => {
           variants={variant4}
           animate="visible"
           initial="hidden"
-          className="border-b-2 border-gray-100 mb-5 pl-5"
+          className="lg:border-b-2 border-gray-100 mb-5 pl-5"
         >
           <div className="pr-8 pb-8 pt-8">
             <div className="flex items-center justify-between">

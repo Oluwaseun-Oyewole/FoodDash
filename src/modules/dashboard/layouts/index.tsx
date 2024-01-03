@@ -13,10 +13,10 @@ const DashboardLayout = () => {
     : location.pathname.split("/").pop() || "";
 
   return (
-    <div>
+    <>
       <Navbar />
-      <div className="flex h-screen ">
-        <div className=" md:block w-[30%] lg:w-[20%]">
+      <div className="flex">
+        <div className="hidden lg:block md:w-[20%]">
           <Sidebar />
         </div>
 
@@ -29,7 +29,7 @@ const DashboardLayout = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

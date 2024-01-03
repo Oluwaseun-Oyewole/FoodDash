@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { FiLoader } from "react-icons/fi";
 
 const Loader = (props: { screen?: boolean }) => {
   return (
@@ -8,7 +9,7 @@ const Loader = (props: { screen?: boolean }) => {
         "grid place-content-center place-items-center bg-transparent"
       )}
     >
-      <p> Loading....</p>
+      <FiLoader size={25} className="text-bluePrimary" />
     </div>
   );
 };

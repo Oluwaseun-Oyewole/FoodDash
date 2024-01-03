@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes, PropsWithChildren } from "react";
-import { CgSpinner } from "react-icons/cg";
+import { FiLoader } from "react-icons/fi";
 
 type IProps = {
   className: string;
@@ -20,7 +20,7 @@ const Button: React.FC<IProps & PropsWithChildren> = ({
       {children}
       {isLoading && (
         <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-          <CgSpinner size={50} className="bg-red-500" />
+          <FiLoader size={25} />
         </svg>
       )}
     </button>
