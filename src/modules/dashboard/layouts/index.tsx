@@ -15,7 +15,7 @@ const DashboardLayout = () => {
   return (
     <>
       <Navbar />
-      <div className="flex h-screen">
+      <div className="flex">
         <div className="w-[30%] lg:block md:w-[20%]">
           <Sidebar />
         </div>
