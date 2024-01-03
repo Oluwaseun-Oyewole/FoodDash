@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <header
       className={`sticky left-0 top-0 z-10 ${
-        scrollNavbar ? "bg-gray-100" : "bg-gray-100 md:bg-white"
+        scrollNavbar ? "bg-white" : "bg-gray-100 md:bg-white"
       } `}
     >
       <nav className="flex items-center justify-between border-b-2 border-gray-200">

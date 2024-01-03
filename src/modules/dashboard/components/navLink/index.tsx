@@ -33,7 +33,7 @@ export const NavLinkComponent = ({
   );
 
   return (
-    <div className="max-w-[70%] mx-auto sticky left-0 top-0">
+    <div className="max-w-[70%] mx-auto h-screen sticky left-0 top-0">
       <div className="pt-10">
         {/* <h1 className="uppercase text-gray-400 text-sm pb-2">Menu</h1> */}
         <ul className={className ? className : `space-y-2`}>

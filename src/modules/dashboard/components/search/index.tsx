@@ -1,6 +1,6 @@
-import { Formik } from "formik";
+import { Form, Formik } from "formik";
 import React, { ChangeEvent, useEffect, useRef, useState } from "react";
-import { Form, SetURLSearchParams, useSearchParams } from "react-router-dom";
+import { SetURLSearchParams, useSearchParams } from "react-router-dom";
 import { debounce } from "underscore";
 
 interface ISearchProps {
@@ -55,19 +55,18 @@ const Search: React.FC<ISearchProps> = (props) => {
     )
   ).current;
 
+  const initialValues = {
+    search: searchInput,
+  };
+
   return (
     <div className="relative">
-      <Formik
-        initialValues={{
-          search: searchInput,
-        }}
-        onSubmit={handleSubmit}
-      >
+      <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         {(formik) => (
           <>
             <Form className="w-full">
               <input
-                type="search"
+                type="text"
                 placeholder={placeholder}
                 name="search"
                 value={formik.values.search}
