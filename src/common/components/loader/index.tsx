@@ -9,7 +9,9 @@ const Loader = (props: { screen?: boolean }) => {
         "grid place-content-center place-items-center bg-transparent"
       )}
     >
-      <FiLoader size={25} className="text-bluePrimary" />
+      <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+        <FiLoader size={25} className="text-bluePrimary" />
+      </svg>
     </div>
   );
 };
