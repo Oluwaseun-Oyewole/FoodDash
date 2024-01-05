@@ -1,1 +1,1 @@
-#### GoodFood Dashboard built with React and Typescript
+##### GoodFood Dashboard built with React and Typescript
