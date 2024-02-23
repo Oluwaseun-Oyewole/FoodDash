@@ -14,7 +14,7 @@ Tailwind
 Typescript
 ```
 
-[NHT Dashboard](https://dashboard-financials.vercel.app/)
+[Dashboard](https://dashboard-neth.vercel.app/)
 
 ![screenshot](<src/assets/Screenshot 2024-02-23 at 18.32.28.png>)
 ![screenshot](<src/assets/Screenshot 2024-02-23 at 18.32.36.png>)
